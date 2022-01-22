@@ -1,6 +1,16 @@
 public class Main {
     public static void main(String[] args) {
 
+        Dom dom1 = new Dom();
+        dom1.setPowierzchnia(200.00);
+        dom1.kolorDomu(Kolor.BRAZOWY);
+        dom1.liczbaOkien(10);
+        dom1.liczbaMieszkancow(4);
+        dom1.setAdres("Por.Macieja 15");
+        System.out.println(dom1);
+
+
+
         /* zad.1
         a) Stwożyć interfejs Budynek,
         b) interfejs powinien mieć metody:
