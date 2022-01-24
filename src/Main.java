@@ -1,17 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        Dom dom1 = new Dom();
-        dom1.setPowierzchnia(200.00);
-        dom1.kolorDomu(Kolor.BRAZOWY);
-        dom1.liczbaOkien(10);
-        dom1.liczbaMieszkancow(4);
-        dom1.setAdres("Por.Macieja 15");
-        System.out.println(dom1);
 
-
-
-        /* zad.1
+  /* zad.1
         a) Stwożyć interfejs Budynek,
         b) interfejs powinien mieć metody:
             - double powierzchnia(double pow);
@@ -37,5 +28,22 @@ public class Main {
         b) wykorzystać wszystkie metody do implementacji pól
         c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
         */
+        Dom dom1 = new Dom();
+        dom1.setKolorDomu(KolorEnum.KREMOWY);
+        dom1.setLiczbaMieszkancow(5);
+        dom1.setLiczbaOkien(0);
+        dom1.powierzchnia(100.00);
+        dom1.adresBudynku("Porucznia.Macieja");
+        System.out.println(dom1);
+
+        Budynek budynek1 = new Dom ();
+        //budynek1.setKolorDomu(KolorEnum.KREMOWY);
+        //budynek1.setLiczbaMieszkancow(5);
+        //budynek1.setLiczbaOkien(0);
+        //budynek1.powierzchnia(100.00);
+        //budynek1.adresBudynku("Porucznia.Macieja");
+
+
+
     }
 }

@@ -1,11 +1,11 @@
 public interface Budynek {
 
 
-    double setPowierzchnia(Double pow);
-    String setAdres(String adres);
-    int liczbaOkien(int okna);
-    void liczbaMieszkancow(int mieszkancy);
-    void kolorDomu(Kolor kolor);
-
+     public double powierzchnia(double pow);
+     public String adresBudynku(String adres);
+     public int liczbaOkien(int value);
+     public void liczbaMieszkancow(int value);
+     public void kolorDomu(KolorEnum kolor);
+     public String mieszkanie (int pietro, int numerMieszkania);
 
 }
