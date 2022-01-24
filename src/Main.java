@@ -31,17 +31,19 @@ public class Main {
         Dom dom1 = new Dom();
         dom1.setKolorDomu(KolorEnum.KREMOWY);
         dom1.setLiczbaMieszkancow(5);
-        dom1.setLiczbaOkien(0);
+        dom1.liczbaOkien(4);
         dom1.powierzchnia(100.00);
         dom1.adresBudynku("Porucznia.Macieja");
         System.out.println(dom1);
 
         Budynek budynek1 = new Dom ();
-        //budynek1.setKolorDomu(KolorEnum.KREMOWY);
-        //budynek1.setLiczbaMieszkancow(5);
-        //budynek1.setLiczbaOkien(0);
-        //budynek1.powierzchnia(100.00);
-        //budynek1.adresBudynku("Porucznia.Macieja");
+        budynek1.kolorDomu(KolorEnum.SZARY);
+        budynek1.liczbaMieszkancow(2);
+        budynek1.liczbaOkien(8);
+        budynek1.powierzchnia(55.00);
+        budynek1.adresBudynku("Porucznia.Macieja");
+        System.out.println(budynek1);
+
 
 
 

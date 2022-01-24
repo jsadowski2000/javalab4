@@ -11,19 +11,10 @@ public class Dom implements Budynek {
     public String adresBudynku(String adres) {
         return adres;
     }
-    public void liczbaOkien(int value) {
-    this.liczbaOkien = value;
+    public int liczbaOkien(int value) {
+        return value;
     }
-
-    public int getLiczbaOkien() {
-        return liczbaOkien;
-    }
-
-    public void setLiczbaOkien(int liczbaOkien) {
-        this.liczbaOkien = liczbaOkien;
-    }
-
-    public void liczbaMieszkanocw(int value) {
+    public void liczbaMieszkancow(int value) {
         this.liczbaMieszkancow = value;
     }
     public int getLiczbaMieszkancow() {
@@ -44,13 +35,16 @@ public class Dom implements Budynek {
     public void setKolorDomu(KolorEnum kolorDomu) {
         this.kolorDomu = kolorDomu;
     }
+    public String mieszkanie (int pietro, int numerMieszkania) {
+        return "";
+    }
 
     @Override
     public String toString() {
         return "Dom{" +
-               "liczbaMieszkancow=" + liczbaMieszkancow +
+                "liczbaMieszkancow=" + liczbaMieszkancow +
                 ", kolorDomu=" + kolorDomu +
-                ", liczbaOkien=" + liczbaOkien +
                 '}';
     }
 }
+
