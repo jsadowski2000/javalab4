@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -20,10 +22,39 @@ public class Main {
         (gettery i settery / toString() ..., najlepiej wygenerować: Code/Prawy myszy-->Generate-->getters/setters/toString)
         */
 
+        Student student1 = new Student();
+        student1.nrIndeksu(44432);
+        student1.wydzial("INFORMATYCZNY");
+        student1.semestr(4);
+
+        Student student2 = new Student();
+        student2.nrIndeksu(22222);
+        student2.wydzial("FIZYCZNY");
+        student2.semestr(3);
+
+        System.out.println(student1);
+        System.out.println(student2);
+
+        Pracownik pracownik1 = new Pracownik();
+        pracownik1.wyplata(3500);
+        pracownik1.dzial("SEKRETARIAT");
+        pracownik1.ileH(164);
+
+        Pracownik pracownik2 = new Pracownik();
+        pracownik2.wyplata(4800);
+        pracownik2.dzial("KSIEGOWOSC");
+        pracownik2.ileH(120);
+        System.out.println(pracownik1);
+        System.out.println(pracownik2);
+
+
+
         /* zad.3
+
         a) stworzyć 2 objekty typu Student i uzupełnić wszystkie pola
         b) stworzyć 2 objekty typu Pracownik i uzupełnić wszystkie pola
         c) wypisać metody toString() wszystkich objektów
+
 
         zad.4 - Dla chętnych
         a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
