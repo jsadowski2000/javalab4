@@ -1,3 +1,5 @@
+import javax.swing.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +15,22 @@ public class Main {
         b) zaimplementować metody abstrakcyjne odpowiednimi wzorami,
         c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
+        Kwadrat kwadrat1 = new Kwadrat();
+        kwadrat1.a=5;
+        kwadrat1.figura="Kwadrat";
+        System.out.println(kwadrat1.figura);
+        System.out.println("Pole kwadratu = " + kwadrat1.pole());
+        System.out.println("Obwod kwadratu = " + kwadrat1.obwod());
+        Prostokat prostokat1 = new Prostokat();
+        prostokat1.a= 5;
+        prostokat1.b = 10;
+        prostokat1.figura="Prostokat";
+        System.out.println(prostokat1.figura);
+        System.out.println("Pole kwadratu = " + prostokat1.pole());
+        System.out.println("Obwod kwadratu = " + prostokat1.obwod());
+
+
+
 
     }
 }
